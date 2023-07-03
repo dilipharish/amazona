@@ -69,7 +69,7 @@ export default function CartScreen() {
                         variant="light"
                         disabled={item.quantity === 1}
                       >
-                        <i className="fas fa-minus-circle"></i>
+                        <i className="fas fa-minus-circle">-</i>
                       </Button>{' '}
                       <span>{item.quantity}</span>{' '}
                       <Button
@@ -79,7 +79,7 @@ export default function CartScreen() {
                         }
                         disabled={item.quantity === item.countInStock}
                       >
-                        <i className="fas fa-plus-circle"></i>
+                        <i className="fas fa-plus-circle">+</i>
                       </Button>
                     </Col>
                     <Col md={3}>${item.price}</Col>
@@ -88,7 +88,7 @@ export default function CartScreen() {
                         onClick={() => removeItemHandler(item)}
                         variant="light"
                       >
-                        <i className="fas fa-trash"></i>
+                        <i className="fas fa-trash">DELETE</i>
                       </Button>
                     </Col>
                   </Row>
